@@ -1,0 +1,184 @@
+/* Index.html */
+
+.navbar-brand {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none; /* Para eliminar el subrayado por defecto de los enlaces */
+    transition: color 0.2s; /* Efecto de transición para cambiar el color al pasar el ratón */
+}
+
+.navbar-brand:hover {
+    color: #ffcc00; /* Cambia el color al pasar el ratón sobre el enlace */
+}
+
+.navbar-brand:active {
+    text-decoration: underline; /* Agrega un subrayado al hacer clic en el enlace */
+}
+
+
+.nav-link {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none; /* Para eliminar el subrayado por defecto de los enlaces */
+    transition: color 0.2s; /* Efecto de transición para cambiar el color al pasar el ratón */
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Cambia el color al pasar el ratón sobre el enlace */
+}
+
+.nav-link:active {
+    text-decoration: underline; /* Agrega un subrayado al hacer clic en el enlace */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(106, 119, 171, 0.525); 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+circle {
+    fill: transparent;
+    stroke-width: 5;
+}
+
+.circle-bg {
+    stroke: #ccc; /* Color del círculo de fondo */
+}
+
+/* Estilo para el círculo de progreso */
+.skill-circle {
+    --porcentaje: 50; /* Puedes cambiar esto al valor que desees */
+}
+
+/* Estilo inicial del círculo de progreso */
+.circle-progress {
+    fill: none;
+    stroke: #3498db; /* Color de la barra de progreso */
+    stroke-width: 4; /* Grosor de la barra de progreso */
+    stroke-linecap: round;
+    stroke-dasharray: 0 251.2; /* Valor inicial (0%) */
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    animation: fillProgress var(--duracion) ease-out forwards; /* Utilizamos la duración definida en el HTML */
+}
+
+@keyframes fillProgress {
+    to {
+        stroke-dasharray: var(--porcentaje) 251.2; /* Usamos la variable --porcentaje */
+    }
+}
+
+/* Estilos para los marcos de habilidad */
+.skill-card {
+    background-color: silver; /* Cambiar a color plateado */
+    border: 2px solid #007bff; /* Borde con color azul */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px;
+    margin: 10px; /* Espacio entre los marcos */
+    text-align: center;
+    position: relative; /* Agregar esta propiedad para ajustar el posicionamiento de los elementos internos */
+    height: 290px;
+}
+
+.skill-card img {
+    margin-bottom: 10px; /* Espacio entre la imagen y el círculo */
+}
+
+/* Estilos para las palabras "Intermedio" y similares */
+.skill-level {
+    position: absolute; /* Posiciona de manera absoluta con respecto al contenedor */
+    bottom: -10px; /* Ajusta la posición vertical según tus necesidades */
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff; /* Color del nivel */
+    margin: 0; /* Añade un margen para separar del borde inferior */
+    padding-bottom: 14px;
+}
+
+.social-icons {
+    font-size: 50px;
+    color: #007bff; /* Color azul para los iconos */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.social-icons a {
+    margin: 0 40px; /* Espacio entre los iconos */
+}
+
+/* Estilo personalizado para el footer fijo en la parte inferior de la pantalla */
+.fixed-footer {
+    background-color: #333; /* Cambiar el color de fondo */
+    color: #fff; /* Cambiar el color del texto */
+    text-align: center;
+    padding: 10px; /* Añadir más espacio alrededor del texto */
+    border-top: 1px solid #666; /* Agregar un borde en la parte superior */
+}
+
+
+/* Certificado.html */
+
+.border {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 400px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.custom-image {
+    max-height: 50px;
+    width: auto;
+}
+
+.nav-link {
+    color: #007bff;
+    display: block;
+    padding: 10px;
+}
+
+.col-md-6 {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.col-md-6 img {
+    max-width: 100%;
+}
+
+
+.nav-link {
+    color: #007bff;
+}
